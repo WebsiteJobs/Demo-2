@@ -1,0 +1,27 @@
+
+1)custom AMI
+
+2)SNS - simple Notification Services
+
+3)ASG-LC
+
+4)ASG
+
+5)Cloudwatch Alarams
+
+6)Increase the Load on EC2 instance
+
+sudo apt-get install stress
+sudo stress --cpu  8 --timeout 500
+
+1)Remove Cloudwatch alarams
+2)Remove Autoscaling Group
+3)Remove LaunchConfiguration
+4)DeRegister CustomAMI
+5)Remove snapshot
+6)Delete SNS (optional)
+
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+
+ 
