@@ -1,0 +1,106 @@
+
+
+oracle :
+
+default port number is 1521
+default username and password: scott/tiger , system/manager
+default database : global database : orcl/xe
+
+mysql :
+
+default port number is 3306
+default username and password: root/root
+default database : local database 
+
+
+CRUID operations
+C
+R
+U
+I
+D
+
+table : cloumn-name datatype size
+
+
+1) create Local database
+
+ create database emp_db;
+ use emp_db;
+2) create table
+
+  create table emp_info (eid int primary key,ename varchar(25), loc varchar(50));
+  
+  insert into emp_info values(101,'A','abc');
+  insert into emp_info values(102,'B','xyz');
+  insert into emp_info values(103,'C','mno');
+  insert into emp_info values(104,'E','abc');
+  insert into emp_info values(105,'F','xyz');
+  insert into emp_info values(106,'G','mno');
+  insert into emp_info values(107,'H','abc');
+  insert into emp_info values(108,'I','xyz');
+  insert into emp_info values(109,'J','mno');
+  insert into emp_info values(110,'K','abc');
+  insert into emp_info values(111,'L','xyz');
+  insert into emp_info values(112,'M','mno');
+
+  insert into emp_info values(101,'X','ccv');
+
+  select * from emp_info;
+  
+  select eid,ename from emp_info;
+
+  update emp_info set ename='James',loc='IND' where eid=101;
+
+  delete from emp_info where eid =102;
+  delete from emp_info;  //all the records are deleted.
+
+  primary key vs Foreign key
+  
+
+SG:
+
+oracle -- 1521
+
+mysql -- 3306
+aurora -- 3306
+
+sqlserver -- 1433
+
+
+
+primary key
+
+table : 16 pks
+
+col1 pk
+col2
+col3
+col4 pk
+
+
+1 james
+1 jack
+1 tom
+2 james
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
